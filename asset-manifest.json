@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/israel-rocket-alert/static/css/main.4c08e63a.css",
+    "main.js": "/israel-rocket-alert/static/js/main.c36bab73.js",
+    "static/media/logo.png": "/israel-rocket-alert/static/media/logo.558547d26ab9721b3255.png",
+    "static/media/alarm.mp3": "/israel-rocket-alert/static/media/alarm.eb830775dc3c75635202.mp3",
+    "static/media/jerusalem_distance.png": "/israel-rocket-alert/static/media/jerusalem_distance.bac81e957ebb29a6fb29.png",
+    "static/media/tel_aviv_distance.png": "/israel-rocket-alert/static/media/tel_aviv_distance.87f019b1956f8a3407fd.png",
+    "static/media/ashkelon_distance.png": "/israel-rocket-alert/static/media/ashkelon_distance.f33641699a8f546c1da2.png",
+    "static/media/nahal_oz_distance.png": "/israel-rocket-alert/static/media/nahal_oz_distance.406834af914f18c2a386.png",
+    "static/media/beeri_distance.png": "/israel-rocket-alert/static/media/beeri_distance.9d2802bef9fed5318644.png",
+    "index.html": "/israel-rocket-alert/index.html",
+    "main.4c08e63a.css.map": "/israel-rocket-alert/static/css/main.4c08e63a.css.map",
+    "main.c36bab73.js.map": "/israel-rocket-alert/static/js/main.c36bab73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c08e63a.css",
+    "static/js/main.c36bab73.js"
+  ]
+}
