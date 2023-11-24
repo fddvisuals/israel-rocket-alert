@@ -1,0 +1,482 @@
+@import "~antd/dist/antd.css";
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, serif;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: inherit;
+}
+.pageContainer {
+  background: #f4f6f7;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s opacity;
+}
+
+.pageContainer.active {
+  opacity: 1;
+}
+
+/*
+ * Sticky Header
+ */
+.sticky-header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1em;
+  color: white;
+  background-color: #f8f8f8;
+  z-index: 1;
+  overflow-x: hidden;
+  transform: translateY(-100%);
+  transition: transform 200ms, background-color 1s linear;
+}
+
+.sticky-header.alert-mode {
+  background-color: #f5222d4a;
+  /* background: linear-gradient(135deg, #ff4d4f, #a8071a); */
+}
+
+.sticky-header.active {
+  transform: translateY(0);
+}
+
+.sticky-header .left-container {
+  display: flex;
+  align-items: center;
+}
+
+.sticky-header .logo {
+  width: 140px;
+  padding: 0;
+}
+
+.sticky-header .ant-statistic-content-value-int {
+  color: white;
+}
+
+.sticky-header .alerts {
+  display: flex;
+  width: 100%;
+  font-size: 1.4em;
+  margin-left: 1em;
+}
+
+.sticky-header .right-container {
+  display: flex;
+  align-items: center;
+}
+
+.sticky-header .right-container a {
+  color: white;
+}
+
+/*
+ * Header
+ */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff;
+  text-align: left;
+  align-items: center;
+  padding: 0 1em;
+  transition: background-color 1s linear;
+  overflow-y: hidden;
+}
+
+.header-top {
+  margin: 5vh 0;
+}
+
+.header-top .logo {
+  width: 25vh;
+  padding-bottom: 1em;
+}
+
+.header-top h2 {
+  color: #00558c;
+  font-size: 2.7vh;
+}
+
+/*
+ * Alert Mode Header
+ */
+.header.alert-mode {
+  background-color: #f5222d6d;
+  /* background: linear-gradient(90deg, #ff4d4f, #a8071a 60%); */
+}
+
+/*
+ * Header Content
+ */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  color: rgb(224, 0, 0);
+  max-width: 50%;
+}
+
+.header-content h3 {
+  font-size: 4vh;
+}
+
+.header-content .ant-statistic-content-value-int {
+  font-size: 10vh;
+  color: rgb(224, 0, 0);;
+  height: 24vh;
+}
+
+.header-content .summary-text {
+  font-size: 2.5vh;
+}
+
+/*
+ * Header Content in Alert Mode
+ */
+.header-content .alert {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  height: 25%;
+  font-size: 20px;
+}
+
+.header-content .alert-summary-text {
+  font-size: 24px;
+}
+
+/*
+ * Header Bottom
+*/
+.header-bottom {
+  margin: 5vh 0;
+}
+.header-bottom a {
+  color: white;
+}
+
+.material-symbols-outlined {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.error {
+  opacity: 0.5;
+}
+
+/*
+ * Section
+ */
+.section {
+  display: block;
+  padding: 3em 1em;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+.section.mostRecentAlerts {
+  padding: 0;
+  text-align: center;
+  background-color: white;
+}
+.section.mostRecentAlerts .container {
+  padding: 3em 0;
+  text-align: center;
+  font-size: 1.25em;
+}
+.section.mostRecentAlerts .textLeft {
+  text-align: left;
+}
+.section.mostRecentAlerts .location,
+.showAll {
+  cursor: pointer;
+  text-decoration: underline;
+  background-color: #f8f8f8;
+  padding: 0.5em 1em;
+  margin: 10px;
+}
+.section.mostRecentAlerts .textRight {
+  text-align: right;
+  margin-right: 1em;
+}
+
+/*
+* Map
+*/
+
+.map-marker {
+  background-image: url("marker.png");
+  width: 26px;
+  height: 37px;
+}
+.section.map {
+  text-align: center;
+  padding: 0;
+}
+
+.section .mapText {
+  padding: 1em 1em;
+}
+
+.section .mapText h2 {
+  margin-top: 1em;
+}
+.section .mapText h3 {
+  font-size: 1.5em;
+}
+
+.section .mapText p {
+  margin-top: 1em;
+}
+.section .mapText .enable-location {
+  font-size: 1.25em;
+}
+
+/*
+* Current Operation
+*/
+.current-operation .currentOperationTile {
+  text-align: center;
+  background-color: #00558c;
+  padding: 3em 1em;
+}
+
+.current-operation-large {
+  background-color: #00558c;
+  padding: 3em 1em;
+}
+.current-operation h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+.current-operation-graph {
+  padding: 3em 1em;
+  max-width: 500px;
+  color: #f4f6f7;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.current-operation-graph h2 {
+  color: rgb(255, 255, 255);
+}
+
+/*
+* Location Distance
+*/
+
+.section.location-distance {
+  text-align: center;
+  padding: 0;
+}
+
+.section.location-distance .title {
+  color: white;
+  background-color: #5c0011;
+  padding: 3em 0;
+}
+
+.section.location-distance .title h2 {
+  padding: 0;
+  margin: 0;
+}
+.summary-2 {
+  flex-direction: column;
+  font-family: lato;
+  font-size: 2.8vw;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section.location-distance .content {
+  padding: 0 1em;
+}
+
+.section.location-distance .mobile {
+  display: none;
+}
+
+.section.location-distance .mobile .location-row:nth-child(even) {
+  background-color: white;
+}
+
+.section.location-distance .location-row {
+  padding: 2em 0;
+}
+
+.section.location-distance .location-row h2 {
+  margin-bottom: 0;
+}
+
+.section.location-distance .location-description {
+  font-size: 1.25em;
+}
+
+.section.location-distance .location-example {
+  color: red;
+  font-size: 1.5em;
+}
+
+/*
+ * Tile
+ */
+.tile {
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 5px;
+}
+.tile .subtitle {
+  color: gray;
+}
+.tile .loading-basic {
+  padding: 6px 0;
+}
+.tile .loading-average {
+  padding: 33px 0;
+}
+.tile .alerts .ant-statistic-content-value-int {
+  color: red;
+}
+.tile .average-container {
+  line-height: 3em;
+  padding-top: 15px;
+}
+.tile .separator {
+  color: transparent;
+  height: 100%;
+  margin-top: 15px;
+  margin-left: 10px;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/*
+ * FAQ
+ */
+.faq {
+  background-color: white;
+  padding: 2em;
+}
+
+.faq p {
+  margin: 0;
+}
+
+.faq .question-title {
+  font-size: 1.75em;
+}
+
+.faq .question-answer {
+  font-size: 1.25em;
+  margin-bottom: 2em;
+}
+
+footer {
+  height: 10vh;
+  padding-top: 3vh;
+  background-color: #5c0011;
+}
+
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  /*
+   * Sticky Header
+   */
+  .sticky-header {
+    padding: 0 2em 0 1em;
+  }
+
+  .sticky-header .logo {
+    width: 100px;
+    padding: 0;
+  }
+
+  .sticky-header .alerts {
+    font-size: 1.2em;
+  }
+
+  .header-content .ant-statistic-content-value-int {
+    font-size: 10vh;
+  }
+  /*
+* Header Bottom
+*/
+  .material-symbols-outlined {
+    font-size: 16px;
+  }
+
+  /*
+  * Location Distance
+  */
+  .section.location-distance .mobile {
+    display: block;
+  }
+  .section.location-distance .desktop {
+    display: none;
+  }
+  .section.location-distance .title h2 {
+    font-size: 1.7em;
+  }
+  .section.location-distance .location-row h2 {
+    font-size: 1.7em;
+  }
+}
+
+@keyframes moveIn {
+  0% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+}
