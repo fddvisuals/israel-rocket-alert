@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/israel-rocket-alert/static/css/main.4c08e63a.css",
-    "main.js": "/israel-rocket-alert/static/js/main.c36bab73.js",
+    "main.js": "/israel-rocket-alert/static/js/main.aca3b41a.js",
     "static/media/logo.png": "/israel-rocket-alert/static/media/logo.558547d26ab9721b3255.png",
     "static/media/alarm.mp3": "/israel-rocket-alert/static/media/alarm.eb830775dc3c75635202.mp3",
     "static/media/jerusalem_distance.png": "/israel-rocket-alert/static/media/jerusalem_distance.bac81e957ebb29a6fb29.png",
@@ -11,10 +11,10 @@
     "static/media/beeri_distance.png": "/israel-rocket-alert/static/media/beeri_distance.9d2802bef9fed5318644.png",
     "index.html": "/israel-rocket-alert/index.html",
     "main.4c08e63a.css.map": "/israel-rocket-alert/static/css/main.4c08e63a.css.map",
-    "main.c36bab73.js.map": "/israel-rocket-alert/static/js/main.c36bab73.js.map"
+    "main.aca3b41a.js.map": "/israel-rocket-alert/static/js/main.aca3b41a.js.map"
   },
   "entrypoints": [
     "static/css/main.4c08e63a.css",
-    "static/js/main.c36bab73.js"
+    "static/js/main.aca3b41a.js"
   ]
 }
