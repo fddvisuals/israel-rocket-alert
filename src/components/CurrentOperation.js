@@ -73,7 +73,7 @@ class CurrentOperation extends React.Component {
           radius: [5, 5, 0, 0],
         },
         color: "#FFFFFF",
-        appendPadding: [30, 0, 0, 0],
+        appendPadding: [30, 0,30, 0],
         label: {
           position: "top",
           style: {
@@ -102,7 +102,7 @@ class CurrentOperation extends React.Component {
     return (
       <section className="current-operation">
         <div className="currentOperationTile">
-          <Row gutter={[24, 24]} align={"center"}>
+          <Row gutter={[24,24]} align={"center"}>
             <Col xs={24} sm={12} md={8} lg={6} align={"center"}>
               <h2>Total Alerts</h2>
               <Tile
