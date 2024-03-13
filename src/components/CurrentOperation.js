@@ -68,7 +68,7 @@ class CurrentOperation extends React.Component {
         xField: "week",
         yField: "count",
         seriesField: "",
-        // columnWidthRatio: 0.5,
+        columnWidthRatio: 0.3,
         columnStyle: {
           radius: [5, 5, 0, 0],
         },
